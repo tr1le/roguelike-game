@@ -28,7 +28,7 @@ TMaze::TMaze(const std::string path) {
     for (int y = 0; y < MazeHeight; ++y) {
         for (int x = 0; x < MazeWidth; ++x) {
             if (RoomTypes[y][x] != '.') {
-                std::string str = "../resources/";
+                std::string str = "../src/resources/";
                 str += RoomTypes[y][x];
                 str += ".txt";
                 Rooms[y][x] = new TRoom(str, RoomWidth, RoomHeight);

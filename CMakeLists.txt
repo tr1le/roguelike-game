@@ -8,13 +8,13 @@ set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/bin)
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/bin)
 
 set(SOURCE_FILES
-        glad.c
-        Image.cpp
-        Tiles.cpp
-        Player.cpp
-        Room.cpp
-        Maze.cpp
-        main.cpp)
+        src/glad.c
+        src/Image.cpp
+        src/Tiles.cpp
+        src/Player.cpp
+        src/Room.cpp
+        src/Maze.cpp
+        src/main.cpp)
 
 set(ADDITIONAL_INCLUDE_DIRS
         dependencies/include/GLAD)

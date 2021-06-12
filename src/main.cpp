@@ -111,7 +111,7 @@ int main(int argc, char** argv) {
 
     glfwWindowHint(GLFW_RESIZABLE, GL_FALSE);
 
-    GLFWwindow*  window = glfwCreateWindow(WINDOW_WIDTH, WINDOW_HEIGHT, "task1 base project", nullptr, nullptr);
+    GLFWwindow*  window = glfwCreateWindow(WINDOW_WIDTH, WINDOW_HEIGHT, "Roguelike", nullptr, nullptr);
     if (window == nullptr) {
         std::cout << "Failed to create GLFW window" << std::endl;
         glfwTerminate();
@@ -139,7 +139,7 @@ int main(int argc, char** argv) {
 
     ////////////////////////////////////////////////////
 
-    TMaze maze("../resources/maze.txt");
+    TMaze maze("../src/resources/maze.txt");
     maze.SetScreen(screenBuffer);
 
     lastFrame = glfwGetTime();
